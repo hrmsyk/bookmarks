@@ -6,5 +6,5 @@ BASE="bookmarks"
 MDFILE="${BASE}.md"
 HTMLFILE="${BASE}.html"
 
-pandoc -s -f textile+smart ${MDFILE} -t html -o ${HTMLFILE}
+pandoc -s -f textile+smart ${MDFILE} -t html -o ${HTMLFILE} --metadata title=${BASE}
 
